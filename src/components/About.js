@@ -1,5 +1,7 @@
 import aboutImg from '../images/about.jpeg';
+
 import Title from './Title';
+
 const About = () => {
   return (
     <section className="section" id="about">

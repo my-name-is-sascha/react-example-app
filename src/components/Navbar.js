@@ -14,10 +14,10 @@ const Navbar = () => {
         </div>
         <ul className="nav-links" id="nav-links">
           {pageLinks.map((link) => {
-            const { id, href, className, text } = link;
+            const { id, href, text } = link;
             return (
               <li key={id}>
-                <Link href={href} className={className} text={text} />
+                <Link href={href} className={'nav-link'} text={text} />
               </li>
             );
           })}
@@ -25,17 +25,16 @@ const Navbar = () => {
 
         <ul className="nav-icons">
           {socialLinks.map((link) => {
-            const { id, href, icon } = link;
+            const { id, href, text, target, rel } = link;
             return (
               <li key={id}>
-                <a
+                <Link
                   href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-icon"
-                >
-                  <i className={icon}></i>
-                </a>
+                  className={'nav-icon'}
+                  text={text}
+                  target={'_blank'}
+                  rel={'noreferrer'}
+                />
               </li>
             );
           })}

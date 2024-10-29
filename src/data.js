@@ -10,25 +10,21 @@ export const pageLinks = [
     id: 1,
     href: '#home',
     text: 'home',
-    className: 'nav-link',
   },
   {
     id: 2,
     href: '#about',
     text: 'about',
-    className: 'nav-link',
   },
   {
     id: 3,
     href: '#services',
     text: 'services',
-    className: 'nav-link',
   },
   {
     id: 4,
     href: '#tours',
     text: 'tours',
-    className: 'nav-link',
   },
 ];
 
@@ -37,20 +33,17 @@ export const socialLinks = [
   {
     id: 1,
     href: 'https://www.facebook.com',
-    icon: 'fab fa-facebook',
-    className: 'nav-icon',
+    text: <i className={'fab fa-facebook'}></i>,
   },
   {
     id: 2,
     href: 'https://www.twitter.com',
-    icon: 'fab fa-twitter',
-    className: 'nav-icon',
+    text: <i className={'fab fa-twitter'}></i>,
   },
   {
     id: 3,
     href: 'https://www.squarespace.com',
-    icon: 'fab fa-squarespace',
-    className: 'nav-icon',
+    text: <i className={'fab fa-squarespace'}></i>,
   },
 ];
 
